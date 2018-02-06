@@ -1,0 +1,28 @@
+datatypes xs = "http://www.w3.org/2001/XMLSchema-datatypes"
+
+start = config
+
+config = element config { dataFolder, styleFolder, startingStyle, checkedElements? }
+
+dataFolder = element dataFolder {extensions?, xs:anyURI}
+
+styleFolder = element styleFolder {extensions?, xs:anyURI}
+
+startingStyle = element startingStyle {xs:anyURI}
+
+
+extensions = attribute extensions {xs:string}
+
+checkedElements = element checkedElements {template, if, choose, for-each, for-each-group, function}
+
+template = element template {element name {xs:boolean}, element match {xs:boolean}}
+
+choose = element choose {element when {xs:boolean}, element otherwise {xs:boolean}}
+
+if = element if {xs:boolean}
+
+for-each = element for-each {xs:boolean}
+
+for-each-group = element for-each-group {xs:boolean}
+
+function = element function {xs:boolean}
