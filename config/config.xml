@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../schema/config.rnc" type="application/relax-ng-compact-syntax"?>
+<config>
+    <!-- Ordner das alle XML-Dateien enthält-->
+    <dataFolder extensions="xml">../sample/xml</dataFolder>
+    <!-- Ordner das alle Stylesheets enthält-->
+    <styleFolder extensions="xsl">../sample/xsl</styleFolder>   
+    <!-- Stylesheet das beim XSLT-Prozess zum starten benutzt wird-->
+    <startingStyle>main.xsl</startingStyle>
+    
+    <checkedElements>
+        <template>
+            <name>true</name>
+            <match>true</match>
+        </template>
+        <if>true</if>
+        <choose>
+            <when>true</when>
+            <otherwise>true</otherwise>
+        </choose>
+        <for-each>true</for-each>
+        <for-each-group>true</for-each-group>
+        <function>true</function>
+    </checkedElements>
+    
+</config>
+
+
