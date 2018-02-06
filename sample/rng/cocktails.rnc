@@ -1,0 +1,22 @@
+datatypes xs = "http://www.w3.org/2001/XMLSchema-datatypes"
+
+start = cocktails
+
+cocktails = element cocktails {cocktail+}
+
+cocktail = element cocktail {cat, name, alc, ingredients}
+
+cat = attribute cat {"fruity" | "creamy" | "sour" | "sweet"}
+
+name = element name {text}
+
+alc = element alc {xs:double}
+
+ingredients = element ingredients {ingredient+}
+
+ingredient = element ingredient {name, portion}
+
+portion = element portion {unit, xs:double}
+
+unit = attribute unit {"cl" | "ml" | "spoon" | "piece" | "slice"}
+

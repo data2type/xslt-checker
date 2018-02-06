@@ -1,0 +1,30 @@
+
+
+
+    
+*******************************************************************************
+**
+** Unused commands in the stylesheet-file: components.xsl
+**
+*******************************************************************************
+
+
+  line        command       position attributes
+-------- ------------------ -------- ----------------------------------------------
+      30 xsl:template              3 match="alc"
+      36 xsl:template              4 match="name"
+
+
+
+    
+*******************************************************************************
+**
+** Unused commands in the stylesheet-file: main.xsl
+**
+*******************************************************************************
+
+
+  line        command       position attributes
+-------- ------------------ -------- ----------------------------------------------
+      28 xsl:if                    3 test="/cocktails/cocktail[@cat = 'sweet']"
+      30 xsl:for-each              3 select="/cocktails/cocktail[@cat = 'sweet']"

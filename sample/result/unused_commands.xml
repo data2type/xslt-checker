@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><d2t:commandfiles xmlns:d2t="http://www.data2type/software/xslt-check"><d2t:commands xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:saxon="http://saxon.sf.net/"><d2t:filename>components.xsl</d2t:filename><d2t:command>
+      <d2t:name>xsl:template</d2t:name>
+      <d2t:position>3</d2t:position>
+      <d2t:line>30</d2t:line>
+   <d2t:xsl><xsl:template match="alc"/></d2t:xsl></d2t:command><d2t:command>
+      <d2t:name>xsl:template</d2t:name>
+      <d2t:position>4</d2t:position>
+      <d2t:line>36</d2t:line>
+   <d2t:xsl><xsl:template match="name"/></d2t:xsl></d2t:command></d2t:commands><d2t:commands xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:saxon="http://saxon.sf.net/"><d2t:filename>main.xsl</d2t:filename><d2t:command>
+      <d2t:name>xsl:for-each</d2t:name>
+      <d2t:position>3</d2t:position>
+      <d2t:line>30</d2t:line>
+   <d2t:xsl><xsl:for-each select="/cocktails/cocktail[@cat = 'sweet']"/></d2t:xsl></d2t:command><d2t:command>
+      <d2t:name>xsl:if</d2t:name>
+      <d2t:position>3</d2t:position>
+      <d2t:line>28</d2t:line>
+   <d2t:xsl><xsl:if test="/cocktails/cocktail[@cat = 'sweet']"/></d2t:xsl></d2t:command></d2t:commands></d2t:commandfiles>

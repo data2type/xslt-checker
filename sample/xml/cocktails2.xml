@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../rng/cocktails.rnc" type="application/relax-ng-compact-syntax"?>
+<cocktails>
+    <cocktail cat="sour">
+        <name>Margarita</name>
+        <alc>30</alc>
+        <ingredients>
+            <ingredient>
+                <name>Tequila (weiss)</name>
+                <portion unit="cl">6</portion>
+            </ingredient>
+            <ingredient>
+                <name>Triple Sec Curaçao</name>
+                <portion unit="cl">2</portion>
+            </ingredient>
+            <ingredient>
+                <name>Limettensaft</name>
+                <portion unit="cl">2</portion>
+            </ingredient>
+        </ingredients>
+    </cocktail>
+    <cocktail cat="sour">
+        <name>Long Island Iced Tea</name>
+        <alc>22</alc>
+        <ingredients>
+            <ingredient>
+                <name>Wodka</name>
+                <portion unit="cl">2</portion>
+            </ingredient>
+            <ingredient>
+                <name>Gin</name>
+                <portion unit="cl">2</portion>
+            </ingredient>
+            <ingredient>
+                <name>Rum (braun)</name>
+                <portion unit="cl">2</portion>
+            </ingredient>
+            <ingredient>
+                <name>Tequila (weiss)</name>
+                <portion unit="cl">2</portion>
+            </ingredient>
+            <ingredient>
+                <name>Triple Sec Curaçao</name>
+                <portion unit="cl">2</portion>
+            </ingredient>
+            <ingredient>
+                <name>Zitronensaft</name>
+                <portion unit="cl">2</portion>
+            </ingredient>
+            <ingredient>
+                <name>Orangensaft</name>
+                <portion unit="cl">2</portion>
+            </ingredient>
+            <ingredient>
+                <name>Cola</name>
+                <portion unit="cl">5</portion>
+            </ingredient>
+        </ingredients>
+    </cocktail>
+    <cocktail cat="creamy">
+        <name>Swimming Pool</name>
+        <alc>9</alc>
+        <ingredients>
+            <ingredient>
+                <name>Wodka</name>
+                <portion unit="cl">3</portion>
+            </ingredient>
+            <ingredient>
+                <name>Blue Curaçao</name>
+                <portion unit="cl">2</portion>
+            </ingredient>
+            <ingredient>
+                <name>Ananassaft</name>
+                <portion unit="cl">8</portion>
+            </ingredient>
+            <ingredient>
+                <name>Sahne</name>
+                <portion unit="cl">2</portion>
+            </ingredient>
+            <ingredient>
+                <name>Cream of Coconut</name>
+                <portion unit="cl">2</portion>
+            </ingredient>
+        </ingredients>
+    </cocktail>
+    <cocktail cat="fruity">
+        <name>Springtime Cooler</name>
+        <alc>13</alc>
+        <ingredients>
+            <ingredient>
+                <name>Wodka</name>
+                <portion unit="cl">4</portion>
+            </ingredient>
+            <ingredient>
+                <name>Blue Curaçao</name>
+                <portion unit="cl">2</portion>
+            </ingredient>
+            <ingredient>
+                <name>Rohrzuckersirup</name>
+                <portion unit="cl">1</portion>
+            </ingredient>
+            <ingredient>
+                <name>Zitronensaft</name>
+                <portion unit="cl">3</portion>
+            </ingredient>
+            <ingredient>
+                <name>Orangensaft</name>
+                <portion unit="cl">5</portion>
+            </ingredient>
+        </ingredients>
+    </cocktail>
+    <cocktail cat="sour">
+        <name>Caipirinha</name>
+        <alc>20</alc>
+        <ingredients>
+            <ingredient>
+                <name>Cachaça</name>
+                <portion unit="cl">6</portion>
+            </ingredient>
+            <ingredient>
+                <name>Lime</name>
+                <portion unit="piece">1</portion>
+            </ingredient>
+            <ingredient>
+                <name>Cane sugar</name>
+                <portion unit="spoon">3</portion>
+            </ingredient>
+        </ingredients>
+    </cocktail>
+</cocktails>
+

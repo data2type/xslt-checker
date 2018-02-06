@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../rng/cocktails.rnc" type="application/relax-ng-compact-syntax"?>
+<cocktails>
+    <cocktail cat="fruity">
+        <name>Tequila Sunrise</name>
+        <alc>12</alc>
+        <ingredients>
+            <ingredient>
+                <name>Tequila (white)</name>
+                <portion unit="cl">6</portion>
+            </ingredient>
+            <ingredient>
+                <name>Grenadine</name>
+                <portion unit="cl">1</portion>
+            </ingredient>
+            <ingredient>
+                <name>Lemon juice</name>
+                <portion unit="cl">1</portion>
+            </ingredient>
+            <ingredient>
+                <name>Orange juice</name>
+                <portion unit="cl">12</portion>
+            </ingredient>
+        </ingredients>
+    </cocktail>
+    <cocktail cat="creamy">
+        <name>Pina Colada</name>
+        <alc>8</alc>
+        <ingredients>
+            <ingredient>
+                <name>Rum (white)</name>
+                <portion unit="cl">3</portion>
+            </ingredient>
+            <ingredient>
+                <name>Cream of Coconut</name>
+                <portion unit="cl">3</portion>
+            </ingredient>
+            <ingredient>
+                <name>Pineapple juice</name>
+                <portion unit="cl">9</portion>
+            </ingredient>
+        </ingredients>
+    </cocktail>
+    <cocktail cat="creamy">
+        <name>White Russian</name>
+        <alc>26</alc>
+        <ingredients>
+            <ingredient>
+                <name>Wodka</name>
+                <portion unit="cl">4</portion>
+            </ingredient>
+            <ingredient>
+                <name>Kaffeelikör</name>
+                <portion unit="cl">2</portion>
+            </ingredient>
+            <ingredient>
+                <name>Sahne</name>
+                <portion unit="cl">2</portion>
+            </ingredient>
+        </ingredients>
+    </cocktail>
+</cocktails>
+
