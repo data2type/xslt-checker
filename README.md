@@ -79,12 +79,9 @@ The default output directory is [{$projectDir}/sample/result](sample/result)
 
 Currently the XSLT Checker has the following restrictions:
 
-- It works on Windows systems only
+- It works on Windows systems only.
+- Java needs to be installed - the environment variable `java` should be set.
 - The Stylesheets should be processable with the Saxon version 8.9
 - The XSLT Checker can not catch any error. The Input Data Set should not throw any error.
-- Only one Stylesheet call is supported. A XSLT pipeline can not be checked by the XSLT Checker 
-
-
-
-
+- Only one Stylesheet call is supported. A XSLT pipeline can not be checked by the XSLT Checker. 
 
