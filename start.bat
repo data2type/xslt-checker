@@ -15,10 +15,8 @@ set TRG_DIR="%~dp0\sample\result"
 
 )
 
-set timef=%time::=%
-set timef=%timef:,=%
 set TEMPROOT=%TEMP%\XSLT-CHECKER-TEMPDIR\
-set TEMPDIR=%TEMPROOT%\temp_%date:.=%%timef%\
+set TEMPDIR=%TEMPROOT%\temp_%random%\
 set TCFG=%TEMPDIR%00Config\Config.xml
 
 set LOGDIR=%TEMPDIR%\04LOG\
