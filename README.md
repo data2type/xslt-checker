@@ -1,6 +1,6 @@
 # XSLT Checker #
 
-The XSLT Checker is a small project to detect in a given XSLT stylesheet commands which are never used when it is processing a huge set of input data.
+The XSLT Checker is a small project to detect commands in any given XSLT stylesheet which are never used when it processes a huge set of input data.
 
 ## Call the XSLT Checker ##
 
@@ -10,37 +10,37 @@ The XSLT Checker is called by:
 start.bat [config-file]? [output-directory]?
 ```
 
-## Configurtion file ##
+## Configuration file ##
 
-The XSLT Checker is configured by a configiguration file, which should valid to the RelaxNG schema [schema/config.rnc](schema/config.rnc).
+The XSLT Checker is configured by a configiguration file, which should be valid to the RelaxNG schema [schema/config.rnc](schema/config.rnc).
 
 The default config will be found in config/config.xml
 
 ### Input Data Set ###
 
-The `<dataFolder>` specifies the input data set. The containing path should point to a folder and can be relative to the config or absolute.
+The `<dataFolder>` specifies the input data set. The containing path should point to a folder and can be relative or absolute to the config.
 
 In the default config the `<dataFolder>` points to the folder [{$projectDir}/sample/xml](./sample/xml/).
 
-The optional attribute `extensions` can be used to specify a file extensions. If the attribute is set only files with those extensions should be used as Input Data Set. Multiple extensions should be separated by a semicolon (`;`). If the attribute is omited any file in the given folder should be used.
+The optional attribute `extensions` can be used to specify a file extension. If the attribute is set only files with those extensions should be used as Input Data Set. Multiple extensions should be separated by a semicolon (`;`). If the attribute is omited any file in the given folder should be used.
 
 In the default config this `extensions` attribute has the value `xml`.
 
 ### XSLT Stylesheet Set ###
 
-The `<styleFolder>` specifies the XSLT Stylesheet Set. The containing path should point to a folder and can be relative to the config or absolute.
+The `<styleFolder>` specifies the XSLT Stylesheet Set. The containing path should point to a folder and can be relative or absolute to the config.
 
 In the default config the `<styleFolder>` points to the folder [{$projectDir}/sample/xsl](./sample/xsl/).
 
-The optional attribute `extensions` can be used to specify a file extensions. If the attribute is set only files with those extensions should be used as XSLT Stylesheet Set. Multiple extensions should be separated by a semicolon (`;`). If the attribute is omited any file in the given folder should be used.
+The optional attribute `extensions` can be used to specify a file extension. If the attribute is set only files with those extensions should be used as XSLT Stylesheet Set. Multiple extensions should be separated by a semicolon (`;`). If the attribute is omited any file in the given folder should be used.
 
 In the default config this `extensions` attribute has the value `xsl`.
 
 ### Main Stylesheet ###
 
-The `startingStyle` specifies one stylesheet in the XSLT Stylesheet Set which should be used as the Main Stylesheet. The containing path should point to the Main Stylesheet and should be relative to the folder `<styleFolder>`.
+The `startingStyle` specifies one stylesheet in the XSLT Stylesheet Set which should be used as the Main Stylesheet. The containing path should point to the main stylesheet and should be relative to the folder `<styleFolder>`.
 
-The Main Stylesheet should include or import all other stylesheets of the XSLT Stylesheet Set directly or indirectly.
+The main stylesheet should include or import all other stylesheets of the XSLT Stylesheet Set directly or indirectly.
 
 ### Command Configuration ###
 
@@ -71,13 +71,13 @@ Example to ignore only the `xsl:template` with `match` attribute:
 
 The output directory will be used to store the result of the XSLT Checker. The result contains two versions of the same report. One in XML and one in plain text format.
 
-Both report versions lists all respected commands which was never used when all files of the Input Data Set was processed by the Main Stylesheet.
+Both report versions list all respected commands which were never used when all files of the Input Data Set was processed by the main stylesheet.
 
 The default output directory is [{$projectDir}/sample/result](sample/result)
 
 ## Restrictions ##
 
-Currently the XSLT Checker has the following restrictions:
+Currently following restrictions apply to the XSLT Checker:
 
 - It works on Windows systems only.
 - Java needs to be installed - the environment variable `java` should be set.
