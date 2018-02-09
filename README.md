@@ -12,11 +12,7 @@ start.bat [config-file]? [output-directory]?
 
 ## Configuration file ##
 
-<<<<<<< HEAD
 The XSLT Checker is configured by a configuration file, which should be valid to the RelaxNG schema [schema/config.rnc](schema/config.rnc).
-=======
-The XSLT Checker is configured by a configiguration file, which should be valid to the RelaxNG schema [schema/config.rnc](schema/config.rnc).
->>>>>>> 4b786f15d455ee1340b8f90792ec07ecf6d74213
 
 The default config will be found in config/config.xml
 
